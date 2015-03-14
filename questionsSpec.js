@@ -171,7 +171,7 @@ describe('javascriptRefresher', function(){
 
   it('finds the factorial of a number', function(){
     var result = refresher.factorial(5);
-    expect(result).toEqual(120);
+    expect(result).toEqual(120); // = 5 * 4 * 3 * 2 * 1
   });
 
   it('finds all possible anagrams of a word', function(){

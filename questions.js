@@ -108,4 +108,30 @@ Refresher.prototype.getDomainName = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.
+Refresher.prototype.titleize = function(string) {
+  return 'Write your method here';
+}
+
+Refresher.prototype.checkForSpecialCharacters = function(string) {
+  return 'Write your method here';
+}
+
+Refresher.prototype.squareRoot = function(number) {
+  return 'Write your method here';
+}
+
+Refresher.prototype.factorial = function(number) {
+  return 'Write your method here';
+}
+
+Refresher.prototype.findAnagrams = function(string) {
+  return 'Write your method here';
+}
+
+Refresher.prototype.convertToCelsius = function(number) {
+  return 'Write your method here';
+}
+
+Refresher.prototype.letterPosition = function(array) {
+  return 'Write your method here';
+}
