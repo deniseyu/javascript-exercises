@@ -30,7 +30,7 @@ var allElementsExceptFirstThree = function(array) {
   return 'Write your method here';
 }
 
-var addElementToBeginning = function(array) {
+var addElementToBeginning = function(array, element) {
   return 'Write your method here';
 }
 
