@@ -1,137 +1,139 @@
-function Refresher(){};
-
-Refresher.prototype.selectElementsStartingWithA = function(array) {
+var selectElementsStartingWithA = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.selectElementsStartingWithVowel = function(array) {
+var selectElementsStartingWithA = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.removeNullElements = function(array) {
+var selectElementsStartingWithVowel = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.removeNullAndFalseElements = function(array) {
+var removeNullElements = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.reverseWordsInArray = function(array) {
+var removeNullAndFalseElements = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.everyPossiblePair = function(array) {
+var reverseWordsInArray = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.allElementsExceptFirstThree = function(array) {
+var everyPossiblePair = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.addElementToBeginning = function(array) {
+var allElementsExceptFirstThree = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.sortByLastLetter = function(array) {
+var addElementToBeginning = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.getFirstHalf = function(string) {
+var sortByLastLetter = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.makeNegative = function(number) {
+var getFirstHalf = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.numberOfPalindromes = function(array) {
+var makeNegative = function(number) {
   return 'Write your method here';
 }
 
-Refresher.prototype.shortestWord = function(array) {
+var numberOfPalindromes = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.longestWord = function(array) {
+var shortestWord = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.sumNumbers = function(array) {
+var longestWord = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.repeatElements = function(array) {
+var sumNumbers = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.stringToNumber = function(string) {
+var repeatElements = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.calculateAverage = function(array) {
+var stringToNumber = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.getElementsUntilGreaterThanFive = function(array) {
+var calculateAverage = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.convertArrayToObject = function(array) {
+var getElementsUntilGreaterThanFive = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.getAllLetters = function(array) {
+var convertArrayToObject = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.swapKeysAndValues = function(object) {
+var getAllLetters = function(array) {
   return 'Write your method here';
 }
 
-Refresher.prototype.sumKeysAndValues = function(object) {
+var swapKeysAndValues = function(object) {
   return 'Write your method here';
 }
 
-Refresher.prototype.removeCapitals = function(string) {
+var sumKeysAndValues = function(object) {
   return 'Write your method here';
 }
 
-Refresher.prototype.roundUp = function(number) {
+var removeCapitals = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.formatDateNicely = function(date) {
+var roundUp = function(number) {
   return 'Write your method here';
 }
 
-Refresher.prototype.getDomainName = function(string) {
+var formatDateNicely = function(date) {
   return 'Write your method here';
 }
 
-Refresher.prototype.titleize = function(string) {
+var getDomainName = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.checkForSpecialCharacters = function(string) {
+var titleize = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.squareRoot = function(number) {
+var checkForSpecialCharacters = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.factorial = function(number) {
+var squareRoot = function(number) {
   return 'Write your method here';
 }
 
-Refresher.prototype.findAnagrams = function(string) {
+var factorial = function(number) {
   return 'Write your method here';
 }
 
-Refresher.prototype.convertToCelsius = function(number) {
+var findAnagrams = function(string) {
   return 'Write your method here';
 }
 
-Refresher.prototype.letterPosition = function(array) {
+var convertToCelsius = function(number) {
+  return 'Write your method here';
+}
+
+var letterPosition = function(array) {
   return 'Write your method here';
 }
