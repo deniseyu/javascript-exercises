@@ -29,7 +29,8 @@ describe('javascriptRefresher', function(){
 
   it('makes every possible pairing of students', function(){
     var result = everyPossiblePair(['Jon', 'Tyrion', 'Daenerys']);
-    expect(result).toEqual([['Daenerys', 'Tyrion'], ['Daenerys', 'Jon'], ['Jon', 'Tyrion']]);
+    // sorted alphabetically
+    expect(result).toEqual([[ 'Daenerys', 'Jon' ], [ 'Daenerys', 'Tyrion' ], [ 'Jon', 'Tyrion' ]] );
   });
 
   it('takes all elements except the first 3', function(){
@@ -60,12 +61,12 @@ describe('javascriptRefresher', function(){
     var resultTwo = makeNegative(-5);
 
     expect(resultOne).toEqual(-5);
-    expect(resultTwo).toEqual(5);
+    expect(resultTwo).toEqual(-5);
   });
 
   it('counts elements in an array that are palindromes', function(){
-    var result = numberOfPalindromes(['kayak', 'noon', 'khaleesi', 'hodor', 'racecar']);
-    expect(result).toEqual(3);
+    var result = numberOfPalindromes(['kayak', 'noon', 'khaleesi', 'hodor', 'racecar', 'abcbc', 'abcba']);
+    expect(result).toEqual(4);
   });
 
   it('returns the shortest word in an array', function(){
@@ -95,7 +96,7 @@ describe('javascriptRefresher', function(){
 
   it('calculates the average of an array of numbers', function(){
     var result = calculateAverage([10, 15, 25]);
-    expect(result).toEqual(17);
+    expect(result).toEqual((10 + 15 + 25) / 3);
   });
 
   it('gets elements until greater than five', function(){
@@ -109,8 +110,12 @@ describe('javascriptRefresher', function(){
   });
 
   it('gets all letters in an array of words', function(){
+    // returns sorted
     var result = getAllLetters(['cat', 'dog', 'fish']);
     expect(result).toEqual(['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']);
+    // deals with repeated letters
+    var result2 = getAllLetters(['cat', 'dog', 'fish', 'cat']);
+    expect(result2).toEqual(['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']);
   });
 
   it('swaps keys and values in an object', function(){
@@ -141,11 +146,15 @@ describe('javascriptRefresher', function(){
   it('gets the domain name from an email address', function(){
     var result = getDomainName('spike@makersacademy.com');
     expect(result).toEqual('makersacademy');
+    var result2 = getDomainName('spike@ssh.makersacademy.com');
+    expect(result2).toEqual('ssh.makersacademy');
   });
 
   it('titleizes a string', function(){
     var result = titleize('the lion the witch and the wardrobe');
     expect(result).toEqual('The Lion the Witch and the Wardrobe');
+    var result2 = titleize('the lion the witch. and the wardrobe');
+    expect(result2).toEqual('The Lion the Witch. And the Wardrobe');
   });
 
   it('checks a string for special characters', function(){
@@ -171,7 +180,15 @@ describe('javascriptRefresher', function(){
 
   it('finds all possible anagrams of a word', function(){
     var result = findAnagrams('mad');
-    expect(result).toEqual(["adm", "amd", "dam", "dma", "mad", "mda"]);
+    var expectedAnagrams = ["adm", "amd", "dam", "dma", "mad", "mda"];
+    for (var anagram of expectedAnagrams) {
+      expect(result).toContain(anagram);
+    }
+    var result2 = findAnagrams('ma');
+    var expectedAnagrams2 = ["am", "ma"];
+    for (var anagram of expectedAnagrams2) {
+      expect(result2).toContain(anagram);
+    }
   });
 
   it('converts Fahrenheit to Celsius rounding to the nearest integer', function(){
