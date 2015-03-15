@@ -60,7 +60,7 @@ describe('javascriptRefresher', function(){
     var resultTwo = makeNegative(-5);
 
     expect(resultOne).toEqual(-5);
-    expect(resultTwo).toEqual(5);
+    expect(resultTwo).toEqual(-5);
   });
 
   it('counts elements in an array that are palindromes', function(){
